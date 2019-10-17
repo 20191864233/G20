@@ -7,11 +7,12 @@
 #include <iostream>
 
 int main()
-{   float p,r,n;
+{   double p,r,n,tup;
     r=0.07;
 	n=10;
 	p=pow(1+r,n);
-		printf("p=%f\n",p);
+	tup=p-1;
+		printf("tup=%f\n",tup);
 
 	system("pause");
 	return 0;
