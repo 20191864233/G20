@@ -1,33 +1,57 @@
-# Prerequisites
-*.d
+＃ VC文件
+* .plg
+* .ncb
+* .opt
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
-*.plg
+＃先决条件
+* .d
 
-# Precompiled Headers
-*.gch
-*.pch
+＃目标文件
+* .o
+* .ko
+* .obj
+* .elf
 
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
+＃链接器输出
+* .ilk
+* .map
+* .exp
 
-# Fortran module files
-*.mod
-*.smod
+＃预编译头
+* .gch
+* .pch
 
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
+＃图书馆
+* .lib
+* .a
+* .la
+* .lo
 
-# Executables
-*.exe
-*.out
-*.app
+＃共享对象（包括Windows DLL）
+* .dll
+* .so
+* .so。*
+* .dylib
+
+＃可执行文件
+* .exe
+* .out
+* .app
+* .i * 86
+* .x86_64
+* .hex
+
+＃调试文件
+* .dSYM /
+* .su
+* .idb
+* .pdb
+
+＃内核模块编译结果
+* .mod *
+* .cmd
+.tmp_versions /
+模块顺序
+模块符号
+Mkfile.old
+dkms.conf
