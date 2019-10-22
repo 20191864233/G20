@@ -6,18 +6,18 @@
 --------------------Configuration: sin函数 - Win32 Debug--------------------
 </h3>
 <h3>Command Lines</h3>
-Creating temporary file "C:\Users\Obi19\AppData\Local\Temp\RSP2FE6.tmp" with contents
+Creating temporary file "C:\Users\Obi19\AppData\Local\Temp\RSPC918.tmp" with contents
 [
 /nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Debug/sin函数.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
-"C:\Users\Obi19\Desktop\C语言上课用\20191864233\sin函数\sin函数.cpp"
+"C:\Users\Obi19\Desktop\C语言上课用\G20\sin函数\sin函数.cpp"
 ]
-Creating command line "cl.exe @C:\Users\Obi19\AppData\Local\Temp\RSP2FE6.tmp" 
-Creating temporary file "C:\Users\Obi19\AppData\Local\Temp\RSP2FE7.tmp" with contents
+Creating command line "cl.exe @C:\Users\Obi19\AppData\Local\Temp\RSPC918.tmp" 
+Creating temporary file "C:\Users\Obi19\AppData\Local\Temp\RSPC919.tmp" with contents
 [
 kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:yes /pdb:"Debug/sin函数.pdb" /debug /machine:I386 /out:"Debug/sin函数.exe" /pdbtype:sept 
 ".\Debug\sin函数.obj"
 ]
-Creating command line "link.exe @C:\Users\Obi19\AppData\Local\Temp\RSP2FE7.tmp"
+Creating command line "link.exe @C:\Users\Obi19\AppData\Local\Temp\RSPC919.tmp"
 <h3>Output Window</h3>
 Compiling...
 sin函数.cpp
