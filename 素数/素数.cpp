@@ -33,7 +33,7 @@ int main(int argc, char* argv[])
 	
 	t1=clock();
 
-	printf("\n2到%d之间素数的个数：%d\n计算2到%d之间素数个数用的总时间：%10.2f秒",m,total,m,(t1-t0)/(float)CLOCKS_PER_SEC);
+	printf("\n2到%d之间素数的个数：%d\n计算2到%d之间素数个数用的总时间：%4.2f秒\n",m,total,m,(t1-t0)/(float)CLOCKS_PER_SEC);
 
 	system("pause");
 	return 0;
