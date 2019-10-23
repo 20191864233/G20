@@ -2,7 +2,6 @@
 //
 
 #include <stdio.h>
-#include <iostream>
 
 int main(int argc, char* argv[])
 {   
@@ -17,6 +16,6 @@ int main(int argc, char* argv[])
 		}
 		printf("\n");
 	}
-	system("pause");
+	getchar();
 	return 0;
 }
