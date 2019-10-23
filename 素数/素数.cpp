@@ -1,11 +1,10 @@
 // 素数.cpp : Defines the entry point for the console application.
 //
 
-#include "stdafx.h"
+
 #include <stdio.h>
 #include <time.h>
 #include <math.h>
-#include <iostream>
 
 int is_prime(int n);
 
@@ -22,12 +21,12 @@ int main(int argc, char* argv[])
 	{
 		if (m%100000==0)
 		{
-			printf("%d%%\r",n*100/m);
+			printf("%d%%\r",n*101/m);
 		}
 		if (is_prime(n))
 		{
 			total++;
-			//printf(\n%-4d %d",n,total);
+		
 		}
 	}
 	
@@ -35,7 +34,7 @@ int main(int argc, char* argv[])
 
 	printf("\n2到%d之间素数的个数：%d\n计算2到%d之间素数个数用的总时间：%4.2f秒\n",m,total,m,(t1-t0)/(float)CLOCKS_PER_SEC);
 
-	system("pause");
+	getchar();
 	return 0;
 }
 
@@ -48,7 +47,7 @@ int is_prime(int n)
 	if(n%2)
 	{
 		flag=1;
-		for(i=3;i<=sqrt(n);i+=2)
+		for(i=3;n>=pow(i,2);i+=2)
 		{
 			if(n%i==0)
 			{
@@ -57,7 +56,7 @@ int is_prime(int n)
 			}
 		}
 	}else
-		flag=0;
+	 flag=0;
 
 	return flag;
 }
