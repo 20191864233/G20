@@ -44,7 +44,8 @@ int is_prime(int n)
 	{
 		flag=1;
 		for(i=3;i<=sqrt(n);i+=2)
-		{
+		{   if(i>3 && i%3==0)
+		    i+=2;
 			if(n%i==0)
 			{
 				flag=0;
