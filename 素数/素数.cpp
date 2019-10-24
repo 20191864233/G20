@@ -11,7 +11,7 @@ int is_prime(int n);
 
 int main(int argc, char* argv[])
 {
-	int n,m=100000;
+	int n,m=1000000;
 	int total=1;
 	long t0,t1;
 
@@ -19,10 +19,6 @@ int main(int argc, char* argv[])
 
 	for (n=3;n<=m;n+=2)
 	{
-		if (m%100000==0)
-		{
-			printf("%d%%\r",n*101/m);
-		}
 		if (is_prime(n))
 		{
 			total++;
@@ -47,7 +43,7 @@ int is_prime(int n)
 	if(n%2)
 	{
 		flag=1;
-		for(i=3;n>=pow(i,2);i+=2)
+		for(i=3;i<=sqrt(n);i+=2)
 		{
 			if(n%i==0)
 			{
