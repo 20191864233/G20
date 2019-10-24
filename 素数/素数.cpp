@@ -19,6 +19,8 @@ int main(int argc, char* argv[])
 
 	for (n=3;n<=m;n+=2)
 	{
+		if (n>3 && n%3==0)
+			n+=2;
 		if (is_prime(n))
 		{
 			total++;
@@ -44,7 +46,8 @@ int is_prime(int n)
 	{
 		flag=1;
 		for(i=3;i<=sqrt(n);i+=2)
-		{   if(i>3 && i%3==0)
+		{   
+			if(i>3 && i%3==0)
 		    i+=2;
 			if(n%i==0)
 			{
