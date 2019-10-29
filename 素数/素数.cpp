@@ -42,21 +42,22 @@ int is_prime(int n)
 	int i;
 	int flag=1;
 
-	if(n%2)
+	if (n%2)
 	{
 		flag=1;
-		for(i=3;i<=sqrt(n);i+=2)
+		for (i=3;i<=sqrt(n);i+=2)
 		{   
-			if(i>3 && i%3==0)
+			if (i>3 && i%3==0)
 		    i+=2;
-			if(n%i==0)
+			if (n%i==0)
 			{
 				flag=0;
 				break;
 			}
 		}
-	}else
-	 flag=0;
+	}
+	else
+	flag=0;
 
 	return flag;
 }
