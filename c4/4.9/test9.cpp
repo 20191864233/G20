@@ -5,6 +5,8 @@
 #include <stdio.h>
 #include <iostream>
 #include <stdlib.h>
+
+
 void weishu(int a);
 void meiyiweishu(int a);
 void nixv(int a);
@@ -21,13 +23,18 @@ int main(int argc, char* argv[])
 	    if (x>=1 && x<=99999)
 		{
 			weishu(x);
-            meiyiweishu(x);
-             printf("\n");
+
+	        printf("每一位数：");
+                meiyiweishu(x);
+			        printf("\n");
+
             nixv(x);
+			    printf("\n");
+
 			break;
 		}
 		else
-			printf("error!");
+			printf("错误!\n");
 	}
 	system("pause");
 	return 0;
@@ -42,6 +49,7 @@ int main(int argc, char* argv[])
 	void weishu(int a)
 	{
 		int m=0;
+		printf("位数：");
 	while(a){
         m++;
         a/=10;
@@ -54,7 +62,7 @@ int main(int argc, char* argv[])
 
 	void meiyiweishu (int a)
 	{
-	 int v;
+	int v;
     if(a==0) return;
     v=a%10;
     meiyiweishu(a/10);
@@ -68,6 +76,7 @@ int main(int argc, char* argv[])
 
 	void nixv(int a)
 	{
+		printf("倒过来写：");
 		 while(a != 0)
 	  {
          printf("%d",a%10);
