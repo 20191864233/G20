@@ -1,13 +1,33 @@
-// 这一年的第几天.cpp : Defines the entry point for the console application.
+// 整合.cpp : Defines the entry point for the console application.
 //
 
 #include "stdafx.h"
 #include <stdio.h>
-#include <iostream>
+#include <math.h>
 
+void date();
 void days(int y,int m,int d);
+void prime();
+
 
 int main(int argc, char* argv[])
+{
+	char c;
+	printf("输入指令（执行素数判断请输a，日期计算请输b，退出请输c）：");
+	scanf("%c",&c);
+	switch(c)
+	{
+	case'a':printf("判断素数\n");prime();break;
+	case'b':printf("判断输入的日期是这一年的第几天\n");date();break;
+	case'c':break;
+	}
+	return 0;
+}
+
+
+
+
+void date()
 {
 	int year,month,day;
 
@@ -34,16 +54,13 @@ int main(int argc, char* argv[])
 	}
 
 	days(year,month,day);
-
-	system("pause");
-	return 0;
 }
 
 
 
 void days(int y,int m,int d)
 {
-	float jan,feb,mar,apr,may,june,july,aug,sep,oct,nov,dec;
+	int jan,feb,mar,apr,may,june,july,aug,sep,oct,nov,dec;
 	jan=31;mar=31;may=31;july=31;aug=31;oct=31;dec=31;
 	apr=30;june=30;sep=30;nov=30;
 	if ( (y%4==0 && y%100!=0) || y%400==0 )
@@ -78,4 +95,26 @@ void days(int y,int m,int d)
 		days=jan+feb+mar+apr+may+june+july+aug+sep+oct+nov+d;
 
 	printf("是第%d天\n",days);
+}
+
+
+void prime()
+{
+	int m;
+	printf("输入一个正整数：");
+	scanf("%d",&m);
+
+	int i;
+	if (m%2==0)
+		printf("不是素数\n");
+	else
+	{
+		for(i=3;i<=sqrt(m);i+=2)
+		{
+			if (m%i==0)
+				printf("不是素数\n");
+			break;
+		}
+		printf("是素数\n");
+	}
 }
