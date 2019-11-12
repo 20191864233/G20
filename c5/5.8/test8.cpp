@@ -14,7 +14,7 @@ int main(int argc, char* argv[])
 	{
 		int x1,x2,x3;
 		x1=(x-x%100)/100;
-		x2=(x%100-(x%100)%10)/10;
+		x2=(x%100-x%10)/10;
 		x3=x%10;
 
 		if ( x == pow(x1,3) + pow(x2,3) + pow(x3,3) )
