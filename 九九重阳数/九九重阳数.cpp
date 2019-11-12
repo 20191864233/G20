@@ -3,7 +3,6 @@
 
 #include "stdafx.h"
 #include <stdio.h>
-#include <math.h>
 #include <time.h>
 
 
@@ -27,7 +26,15 @@ int main(int argc, char* argv[])
 		x8=(x%100-x%10)/10;
 		x9=x%10;
 
-		if (x==pow(x1,9)+pow(x2,9)+pow(x3,9)+pow(x4,9)+pow(x5,9)+pow(x6,9)+pow(x7,9)+pow(x8,9)+pow(x9,9))
+		if (x==x1*x1*x1*x1*x1*x1*x1*x1*x1+
+			   x2*x2*x2*x2*x2*x2*x2*x2*x2+
+			   x3*x3*x3*x3*x3*x3*x3*x3*x3+
+			   x4*x4*x4*x4*x4*x4*x4*x4*x4+
+			   x5*x5*x5*x5*x5*x5*x5*x5*x5+
+			   x6*x6*x6*x6*x6*x6*x6*x6*x6+
+			   x7*x7*x7*x7*x7*x7*x7*x7*x7+
+			   x8*x8*x8*x8*x8*x8*x8*x8*x8+
+			   x9*x9*x9*x9*x9*x9*x9*x9*x9)
 			printf("%d  ",x);
 
 		x++;
