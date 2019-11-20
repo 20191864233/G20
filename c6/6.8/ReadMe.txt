@@ -1,19 +1,19 @@
 ========================================================================
-       CONSOLE APPLICATION : 选择法和冒泡法的练习
+       CONSOLE APPLICATION : test8
 ========================================================================
 
 
-AppWizard has created this 选择法和冒泡法的练习 application for you.  
+AppWizard has created this test8 application for you.  
 
 This file contains a summary of what you will find in each of the files that
-make up your 选择法和冒泡法的练习 application.
+make up your test8 application.
 
-选择法和冒泡法的练习.dsp
+test8.dsp
     This file (the project file) contains information at the project level and
     is used to build a single project or subproject. Other users can share the
     project (.dsp) file, but they should export the makefiles locally.
 
-选择法和冒泡法的练习.cpp
+test8.cpp
     This is the main application source file.
 
 
@@ -22,7 +22,7 @@ Other standard files:
 
 StdAfx.h, StdAfx.cpp
     These files are used to build a precompiled header (PCH) file
-    named 选择法和冒泡法的练习.pch and a precompiled types file named StdAfx.obj.
+    named test8.pch and a precompiled types file named StdAfx.obj.
 
 
 /////////////////////////////////////////////////////////////////////////////
