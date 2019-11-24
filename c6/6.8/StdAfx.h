@@ -3,17 +3,20 @@
 //      are changed infrequently
 //
 
-#if !defined(AFX_STDAFX_H__D8520C56_B180_4CDC_8FEB_C5342ABF84F9__INCLUDED_)
-#define AFX_STDAFX_H__D8520C56_B180_4CDC_8FEB_C5342ABF84F9__INCLUDED_
+#if !defined(AFX_STDAFX_H__DA63A402_792C_4F93_9F76_E7A8626F7B98__INCLUDED_)
+#define AFX_STDAFX_H__DA63A402_792C_4F93_9F76_E7A8626F7B98__INCLUDED_
 
 #if _MSC_VER > 1000
 #pragma once
 #endif // _MSC_VER > 1000
 
+#define WIN32_LEAN_AND_MEAN		// Exclude rarely-used stuff from Windows headers
+
+#include <stdio.h>
 
 // TODO: reference additional headers your program requires here
 
 //{{AFX_INSERT_LOCATION}}
 // Microsoft Visual C++ will insert additional declarations immediately before the previous line.
 
-#endif // !defined(AFX_STDAFX_H__D8520C56_B180_4CDC_8FEB_C5342ABF84F9__INCLUDED_)
+#endif // !defined(AFX_STDAFX_H__DA63A402_792C_4F93_9F76_E7A8626F7B98__INCLUDED_)

@@ -1,19 +1,19 @@
 ========================================================================
-       CONSOLE APPLICATION : test7
+       CONSOLE APPLICATION : 68
 ========================================================================
 
 
-AppWizard has created this test7 application for you.  
+AppWizard has created this 68 application for you.  
 
 This file contains a summary of what you will find in each of the files that
-make up your test7 application.
+make up your 68 application.
 
-test7.dsp
+68.dsp
     This file (the project file) contains information at the project level and
     is used to build a single project or subproject. Other users can share the
     project (.dsp) file, but they should export the makefiles locally.
 
-test7.cpp
+68.cpp
     This is the main application source file.
 
 
@@ -22,7 +22,7 @@ Other standard files:
 
 StdAfx.h, StdAfx.cpp
     These files are used to build a precompiled header (PCH) file
-    named test7.pch and a precompiled types file named StdAfx.obj.
+    named 68.pch and a precompiled types file named StdAfx.obj.
 
 
 /////////////////////////////////////////////////////////////////////////////

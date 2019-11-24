@@ -1,19 +1,19 @@
 ========================================================================
-       CONSOLE APPLICATION : test8
+       CONSOLE APPLICATION : 69
 ========================================================================
 
 
-AppWizard has created this test8 application for you.  
+AppWizard has created this 69 application for you.  
 
 This file contains a summary of what you will find in each of the files that
-make up your test8 application.
+make up your 69 application.
 
-test8.dsp
+69.dsp
     This file (the project file) contains information at the project level and
     is used to build a single project or subproject. Other users can share the
     project (.dsp) file, but they should export the makefiles locally.
 
-test8.cpp
+69.cpp
     This is the main application source file.
 
 
@@ -22,7 +22,7 @@ Other standard files:
 
 StdAfx.h, StdAfx.cpp
     These files are used to build a precompiled header (PCH) file
-    named test8.pch and a precompiled types file named StdAfx.obj.
+    named 69.pch and a precompiled types file named StdAfx.obj.
 
 
 /////////////////////////////////////////////////////////////////////////////
