@@ -75,27 +75,6 @@ void maopao()
 		printf("%d ",a[i]);
 	}
 	printf("\n");
-
-	for (j=0;j<=9;j++)
-	{
-		for (i=0;i<=9-j;i++)
-		{
-			if (a[i]<a[i+1])
-			{
-			    int mid;
-
-			    mid=a[i];
-			    a[i]=a[i+1];
-			    a[i+1]=mid;
-			}
-		}
-	}
-
-	for (i=0;i<=9;i++)
-	{
-		printf("%d ",a[i]);
-	}
-	printf("\n");
 }
 
 
