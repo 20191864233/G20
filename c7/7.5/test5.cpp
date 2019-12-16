@@ -5,16 +5,19 @@
 #include <stdio.h>
 #include <string.h>
 
-void reverse(char a[100]);  //unfinished
+void reverse(char a[1000]);
 
 
 int main(int argc, char* argv[])
 {
-	char a[100];
+	char a[1000];
 	printf("ÊäÈë×Ö·û´®£º");
 	gets(a);
 
 	reverse(a);
+
+	printf("·´ĞòÊä³ö£º");
+	puts(a);
 
 	return 0;
 }
@@ -22,13 +25,17 @@ int main(int argc, char* argv[])
 
 
 
-void reverse(char a[100])
+void reverse(char a[1000])
 {
-	char b[100];
+	int i,n=0;
+	for (i=0;a[i]!=0;i++)
+		n++;
 
-	int i;
-	for (i=0;a[i]!='\0';i++)
+	char temp;
+	for (i=0;i<=n/2;i++)
 	{
-		b[99-i]=a[i];
+		temp=a[i];
+		a[i]=a[n-i-1];
+		a[n-i-1]=temp;
 	}
 }

@@ -6,32 +6,29 @@
 --------------------Configuration: 管理作业 - Win32 Debug--------------------
 </h3>
 <h3>Command Lines</h3>
-Creating temporary file "C:\Users\Lenovo\AppData\Local\Temp\RSP727D.tmp" with contents
+Creating temporary file "C:\Users\Obi19\AppData\Local\Temp\RSPDA69.tmp" with contents
 [
 /nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Debug/管理作业.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
-"D:\网盘\IDE\管理作业\管理作业.cpp"
+"C:\Users\Obi19\Desktop\C语言上课用\G20\管理作业\管理作业.cpp"
 ]
-Creating command line "cl.exe @C:\Users\Lenovo\AppData\Local\Temp\RSP727D.tmp" 
-Creating temporary file "C:\Users\Lenovo\AppData\Local\Temp\RSP727E.tmp" with contents
+Creating command line "cl.exe @C:\Users\Obi19\AppData\Local\Temp\RSPDA69.tmp" 
+Creating temporary file "C:\Users\Obi19\AppData\Local\Temp\RSPDA6A.tmp" with contents
 [
 kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:yes /pdb:"Debug/管理作业.pdb" /debug /machine:I386 /out:"Debug/管理作业.exe" /pdbtype:sept 
 ".\Debug\管理作业.obj"
 ]
-Creating command line "link.exe @C:\Users\Lenovo\AppData\Local\Temp\RSP727E.tmp"
+Creating command line "link.exe @C:\Users\Obi19\AppData\Local\Temp\RSPDA6A.tmp"
 <h3>Output Window</h3>
 Compiling...
 管理作业.cpp
-D:\网盘\IDE\管理作业\管理作业.cpp(74) : error C2143: syntax error : missing ';' before ':'
-D:\网盘\IDE\管理作业\管理作业.cpp(75) : error C2143: syntax error : missing ';' before ':'
-D:\网盘\IDE\管理作业\管理作业.cpp(431) : error C2143: syntax error : missing ';' before ':'
-D:\网盘\IDE\管理作业\管理作业.cpp(432) : error C2143: syntax error : missing ';' before ':'
-D:\网盘\IDE\管理作业\管理作业.cpp(596) : error C2143: syntax error : missing ';' before ':'
-Error executing cl.exe.
+C:\Users\Obi19\Desktop\C语言上课用\G20\管理作业\管理作业.cpp(342) : warning C4101: 'i' : unreferenced local variable
+C:\Users\Obi19\Desktop\C语言上课用\G20\管理作业\管理作业.cpp(640) : warning C4715: 'findname' : not all control paths return a value
+Linking...
 
 
 
 <h3>Results</h3>
-管理作业.exe - 5 error(s), 0 warning(s)
+管理作业.exe - 0 error(s), 2 warning(s)
 </pre>
 </body>
 </html>

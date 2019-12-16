@@ -71,8 +71,8 @@ int main(int argc, char* argv[])
 	       case'1':xiugai();break;
 		   case'2':tongji();break;
 		   case'3':paixv();break;
-		   case'4':chaxun():break;
-		   case'5':save():break;
+		   case'4':chaxun();break;
+		   case'5':save();break;
 		   default:printf("没有该指令，请重新选择");
 	   }
 	}
@@ -428,8 +428,8 @@ void paixv()
 		switch(c3)
 		{
 		case'1':painumber();break;
-		case'2':paiave():break;
-		case'3':paidkcj():break;
+		case'2':paiave();break;
+		case'3':paidkcj();break;
 		default:printf("错误，请重来\n");
 
 		}
@@ -593,7 +593,7 @@ void chaxun()
 		switch(c4)
 		{
 		case'1':axhcz();break;
-		case'2':axmcz():break;
+		case'2':axmcz();break;
 		
 		default:printf("错误，请重来\n");
 		}
