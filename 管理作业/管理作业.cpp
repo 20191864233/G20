@@ -30,7 +30,7 @@ void newfile();
 void read1();
 void output();
 void new1();
-void xiugai1();
+void xiugaixuanze();
 void xiugaichengji(int x);
 void delete1();
 int find(char nomb[]);
@@ -68,11 +68,11 @@ int main(int argc, char* argv[])
 	   getchar();
 	   switch(x)
 	   {
-	       case'1':xiugai();break;
-		   case'2':tongji();break;
-		   case'3':paixv();break;
-		   case'4':chaxun();break;
-		   case'5':save();break;
+	   case'1':xiugai();break;
+	   case'2':tongji();break;
+	   case'3':paixv();break;
+	   case'4':chaxun();break;
+	   case'5':save();break;
 		   default:printf("没有该指令，请重新选择");
 	   }
 	}
@@ -104,29 +104,29 @@ void newfile()
 	scanf("%d",&num);
 	for(i=0;i<num;i++)
 	{
-		    printf("学号:");
+		    printf("学号:\n");
 		gets(stu[i].number);
-		    printf("姓名:");
+		    printf("姓名:\n");
 		gets(stu[i].name);
-		    printf("科目1：");
+		    printf("科目1：\n");
 		scanf("%f",&stu[i].score[0]);
-		    printf("科目2：");
+		    printf("科目2：\n");
 		scanf("%f",&stu[i].score[1]);
-		    printf("科目3：");
+		    printf("科目3：\n");
 		scanf("%f",&stu[i].score[2]);
-			printf("科目4：");
+			printf("科目4：\n");
 		scanf("%f",&stu[i].score[3]);
-			printf("科目5：");
+			printf("科目5：\n");
 		scanf("%f",&stu[i].score[4]);
-			printf("科目6：");
+			printf("科目6：\n");
 		scanf("%f",&stu[i].score[5]);
-			printf("科目7：");
+			printf("科目7：\n");
 		scanf("%f",&stu[i].score[6]);
-			printf("科目8：");
+			printf("科目8：\n");
 		scanf("%f",&stu[i].score[7]);
-			printf("科目9：");
+			printf("科目9：\n");
 		scanf("%f",&stu[i].score[8]);
-			printf("科目10：");
+			printf("科目10：\n");
 		scanf("%f",&stu[i].score[9]);
 			fwrite(&stu[i],sizeof(struct student),1,fp);
 	}
@@ -191,12 +191,15 @@ void xiugai()
 	   {
 		   break;
 	   }
+	   if(c1>'0'&&c1<'4')
+	   {
 	   switch(c1)
 	   {
 	   case'1':new1();break;
-	   case'2':xiugai1();break;
+	   case'2':xiugaixuanze();break;
 	   case'3':delete1();break;  
        default:printf("请重新输入\n");
+	   }
 	   }
 	}
 }
@@ -235,7 +238,7 @@ void new1()
 
 
 
-void xiugai1()
+void xiugaixuanze()
 {
 	char g[11];
 	int i;
@@ -245,17 +248,16 @@ void xiugai1()
 	{
 		if(strcmp(stu[i].number,g)==0)
 		{
-			break;
+		    break;
 		
 		if(i==num)
 		{
 			printf("数据文件上没有该生信息！请重新输入正确学号\n");
 		    return;
 		}
-      	xiugaichengji(i);	
-
-		}
+      	}
 	}
+	xiugaichengji(i);	
 }
 
 void xiugaichengji(int x)
@@ -281,7 +283,9 @@ void xiugaichengji(int x)
 		l=getchar();
 		getchar();
 		if(l=='11')
+		{
 			break;
+		}
 		else if(l>='1'&&l<='10')
 		{
 			k=l-49;
@@ -339,7 +343,7 @@ int find(char nomb[])
 
 void tongji()
 {
-	int i;
+	
 	char c2;
 	while(1)
 	{
@@ -634,8 +638,10 @@ int findname(char fname[])
 			if(strcmp(stu[i].name,fname)==0)
 			{
 				return i;
+                 break;
 			}
 			return -1;
+			break;
 		}
 }
 
